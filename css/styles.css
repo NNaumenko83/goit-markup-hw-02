@@ -1,0 +1,132 @@
+/* Main background color #F5F5F5 */
+/* Main text color #757575 */
+/* Secondary background color #F5F4FA */
+/* Backgroung-footer and hero #2F303A */
+/* logo, buttoms hover and focus #2196F3 */
+/* Hero main text,
+   text of hover and focus buttoms and anchors,
+   footer main text #FFFFFF */
+/* Second text color  rgba(255, 255, 255, 0.6) */
+/* Section titles color #212121 */
+/* #EEEEEE */
+/* Logo color  #000000*/
+/* #ECECEC */
+
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-color: #2196f3;
+	--second-text-color: rgba(255, 255, 255, 0.6);
+	--secondary-background-color: #f5f4fa;
+	--third-background-color: #2f303a;
+}
+
+/* Прибираємо крапки зі списків */
+.list {
+	list-style: none;
+}
+
+body {
+	background-color: #f5f5f5;
+	color: var(--primary-text-color);
+}
+
+/* Хедер */
+
+/* Логотип */
+.logo-web {
+	color: var(--accent-color);
+}
+.logo-studio {
+	color: #000000;
+}
+
+nav .link:hover,
+nav .link:focus {
+	color: var(--accent-color);
+}
+/* Site-nav */
+
+.site-nav .link {
+	color: #212121;
+}
+
+.site-nav .link.current {
+	color: var(--accent-color);
+}
+
+.list .link:hover,
+.list .link:focus {
+	color: var(--accent-color);
+}
+
+/* Контакти */
+.contacts .link {
+	color: inherit;
+}
+
+/* Заголовки секцій і списків */
+
+/* Секція герой */
+.section.hero .title,
+.adress-link,
+.footer .logo-studio {
+	color: #ffffff;
+}
+
+.section.hero {
+	background-color: #2f303a;
+}
+/* Секція Особливості роботи */
+.features-list .title {
+	color: var(--title-text-color);
+}
+
+/* Секція чим ми займаємось */
+.section .title {
+	color: #212121;
+}
+
+/* Секція наша команда */
+
+/* Футер */
+
+.adress-link:hover,
+.adress-link:focus {
+	color: var(--accent-color);
+}
+
+.adress .link {
+	color: var(--second-text-color);
+}
+.footer {
+	background-color: var(--third-background-color);
+}
+
+/* ПОРТФОЛІО */
+
+/* Хедер і футер стилі задані раніше. Такі самі як на говлній сторінці */
+
+/* Головна секція - портфоліо */
+
+.list .link {
+	color: var(--primary-text-color);
+}
+
+/* Button */
+
+.btn {
+	color: var(--title-text-color);
+	background-color: var(--secondary-background-color);
+}
+
+.btn.primary {
+	color: #ffffff;
+	background-color: var(--accent-color);
+}
+
+.btn:hover,
+.btn:focus {
+	color: #ffffff;
+	background-color: var(--accent-color);
+}
