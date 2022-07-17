@@ -17,6 +17,7 @@
 /* Roboto 400*/
 /* Roboto 500*/
 /* Roboto 700*/
+/* Roboto 900*/
 
 :root {
 	--primary-text-color: #757575;
@@ -35,12 +36,23 @@
 body {
 	background-color: #f5f5f5;
 	color: var(--primary-text-color);
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;
 }
 
 /* Хедер */
 
 /* Логотип */
+
+.logo-web,
+.logo-studio {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+}
+
 .logo-web {
 	color: var(--accent-color);
 }
@@ -72,6 +84,16 @@ nav .link:focus {
 	color: inherit;
 }
 
+.site-nav .link,
+.contacts .link {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
 /* Заголовки секцій і списків */
 
 /* Секція герой */
@@ -84,6 +106,27 @@ nav .link:focus {
 .section.hero {
 	background-color: #2f303a;
 }
+
+.section.hero .title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.section.hero .btn {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+}
+
 /* Секція Особливості роботи */
 .features-list .title {
 	color: var(--title-text-color);
@@ -94,6 +137,17 @@ nav .link:focus {
 	color: #212121;
 }
 
+.features-list .title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.features-list .text {
+	font-size: 14px;
+	line-height: 1.71;
+}
 /* Секція наша команда */
 
 /* Футер */
@@ -125,6 +179,7 @@ nav .link:focus {
 .btn {
 	color: var(--title-text-color);
 	background-color: var(--secondary-background-color);
+	font-family: inherit;
 }
 
 .btn.primary {
