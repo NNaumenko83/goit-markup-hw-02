@@ -29,10 +29,19 @@
 }
 
 /* Прибираємо крапки зі списків */
-.list {
+.list,
+.features-list,
+.command-list,
+.portfolio-list {
 	list-style: none;
 }
 
+/* Прибираємо підкреслення у посилань */
+a {
+	text-decoration: none;
+}
+
+/* Основні стилі */
 body {
 	background-color: #f5f5f5;
 	color: var(--primary-text-color);
@@ -47,7 +56,6 @@ body {
 .logo-web,
 .logo-studio {
 	font-family: "Raleway";
-	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.2;
@@ -87,7 +95,6 @@ nav .link:focus {
 .site-nav .link,
 .contacts .link {
 	font-family: inherit;
-	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -107,7 +114,7 @@ nav .link:focus {
 	background-color: #2f303a;
 }
 
-.section.hero .title {
+.section.hero > .title {
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -130,14 +137,6 @@ nav .link:focus {
 /* Секція Особливості роботи */
 .features-list .title {
 	color: var(--title-text-color);
-}
-
-/* Секція чим ми займаємось */
-.section .title {
-	color: #212121;
-}
-
-.features-list .title {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -148,8 +147,34 @@ nav .link:focus {
 	font-size: 14px;
 	line-height: 1.71;
 }
+
+/* Секція чим ми займаємось */
+.section > .title {
+	color: var(--title-text-color);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+}
 /* Секція наша команда */
 
+.command-list .title {
+	color: var(--title-text-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+}
+
+.command-list .text {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+}
+
+.command {
+	background: var(--secondary-background-color);
+}
 /* Футер */
 
 .adress-link:hover,
@@ -158,8 +183,16 @@ nav .link:focus {
 }
 
 .adress .link {
+	font-style: normal;
 	color: var(--second-text-color);
+	font-size: 14px;
+	line-height: 1.71;
 }
+
+.adress-link {
+	font-style: normal;
+}
+
 .footer {
 	background-color: var(--third-background-color);
 }
@@ -170,16 +203,13 @@ nav .link:focus {
 
 /* Головна секція - портфоліо */
 
-.list .link {
-	color: var(--primary-text-color);
-}
-
 /* Button */
 
 .btn {
 	color: var(--title-text-color);
 	background-color: var(--secondary-background-color);
 	font-family: inherit;
+	cursor: pointer;
 }
 
 .btn.primary {
@@ -187,8 +217,38 @@ nav .link:focus {
 	background-color: var(--accent-color);
 }
 
+.list .btn.primary {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+}
+
+.list .btn.socondary {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+}
+
 .btn:hover,
 .btn:focus {
 	color: #ffffff;
 	background-color: var(--accent-color);
+}
+
+/* Посилання на проєкти */
+
+.portfolio-list .title {
+	color: var(--title-text-color);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.portfolio-list .text {
+	color: var(--primary-text-color);
+	font-size: 16px;
+	line-height: 1.88;
 }
