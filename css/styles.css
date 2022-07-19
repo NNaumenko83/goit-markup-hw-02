@@ -26,6 +26,7 @@
 	--second-text-color: rgba(255, 255, 255, 0.6);
 	--secondary-background-color: #f5f4fa;
 	--third-background-color: #2f303a;
+	--main-background-color: #ffffff;
 }
 
 /* Прибираємо крапки зі списків */
@@ -43,7 +44,7 @@ a {
 
 /* Основні стилі */
 body {
-	background-color: #f5f5f5;
+	background-color: var(--main-background-color);
 	color: var(--primary-text-color);
 	font-family: Roboto, sans-serif;
 	letter-spacing: 0.03em;
