@@ -131,6 +131,7 @@ body {
 	text-align: center;
 	letter-spacing: 0.06em;
 	background-color: var(--accent-color);
+	cursor: pointer;
 }
 
 /* Секція Особливості роботи */
