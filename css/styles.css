@@ -35,6 +35,7 @@ body {
 	color: var(--primary-text-color);
 	font-family: Roboto, sans-serif;
 	letter-spacing: 0.03em;
+	font-size: 14px;
 }
 /* Прибираємо крапки зі списків */
 .list {
@@ -52,7 +53,7 @@ body {
 
 .logo-web,
 .logo-studio {
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.2;
@@ -94,7 +95,7 @@ body {
 .contacts-list-item .link {
 	font-family: inherit;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: inherit;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
@@ -138,13 +139,13 @@ body {
 .features-list-title {
 	color: var(--title-text-color);
 	font-weight: 700;
-	font-size: 14px;
+	font-size: inherit;
 	line-height: 1.14;
 	text-transform: uppercase;
 }
 
 .features-list-text {
-	font-size: 14px;
+	font-size: inherit;
 	line-height: 1.71;
 }
 
@@ -181,7 +182,7 @@ body {
 .adress-list .link {
 	font-style: normal;
 	color: var(--second-text-color);
-	font-size: 14px;
+	font-size: inherit;
 	line-height: 1.71;
 }
 
@@ -211,6 +212,7 @@ body {
 /* Button */
 
 .portfolio-list-btn {
+	letter-spacing: 0.03em;
 	color: var(--title-text-color);
 	background-color: var(--secondary-background-color);
 	font-family: inherit;
@@ -220,9 +222,6 @@ body {
 .portfolio-list-btn.primary {
 	color: #ffffff;
 	background-color: var(--accent-color);
-}
-
-.portfolio-list-btn.primary {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
@@ -256,4 +255,18 @@ body {
 	color: var(--primary-text-color);
 	font-size: 16px;
 	line-height: 1.88;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
